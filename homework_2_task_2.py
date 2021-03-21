@@ -42,8 +42,6 @@ print(task_string)
 task_string_second = ' '.join(meteo_words)
 print(task_string_second)
 task_string_second = task_string_second.replace('в " ', 'в "', 2).replace(' " ', '" ', 2).replace(' " ',' "', 1).replace(' " ','" ')
-#task_string_second = task_string.replace('" 17 "', '"17"')
-#task_string_second = task_string.replace('" +05 "', '"+05"')
 print(f'{task_string_second} строка')
 
 # и ещё такой вариант с изменением исходного списка, добавил переменную keep_var
