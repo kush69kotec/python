@@ -8,6 +8,8 @@ class Cell:
     def __add__(self, other):
         if isinstance(other, Cell):
             return Cell(self.num_of_cells + other.num_of_cells)
+        else:
+            raise ValueError('Нельзя произвести сложение')
 
     def __sub__(self, other):
         if isinstance(other, Cell) and self.num_of_cells > other.num_of_cells:
@@ -18,6 +20,8 @@ class Cell:
     def __mul__(self, other):
         if isinstance(other, Cell):
             return Cell(self.num_of_cells * other.num_of_cells)
+        else:
+            raise ValueError('Нельзя произвести умножение')
 
     def __floordiv__(self, other):
         if isinstance(other, Cell):
