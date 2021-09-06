@@ -15,9 +15,7 @@ for row in matrix:
 
 min_elem_in_table_list = []
 for i in range(tables_num):
-    print(f'{i = }')
     min_elem = matrix[0][i]
-    print(min_elem)
     for j in range(rows_num):
         if matrix[j][i] < min_elem:
             min_elem = matrix[j][i]
