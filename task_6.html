@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        function add (x, y) {
+            if (!isNaN(x) && !isNaN(y))
+                var c = x + y;
+            return c;
+        }
+
+        function  sub(x, y) {
+            if (!isNaN(x) && !isNaN(y))
+                var c = x - y;
+            return c;
+        }
+
+        function mult(x, y) {
+            if (!isNaN(x) && !isNaN(y))
+                var c = x * y;
+            return c;
+        }
+
+        function div(x, y) {
+            if (!isNaN(x) && !isNaN(y))
+                var c = x / y;
+            return c;
+        }
+
+        function mathOperation(x, y, operation) {
+            switch (operation) {
+                case 'addition':
+                    var c = add(x,y);
+                    break;
+                case 'subtraction':
+                    var c = sub(x,y);
+                    break;
+                case 'multiplication':
+                    var c = mult(x, y);
+                    break
+                case 'division':
+                    var c = div(x, y);
+                    break;
+            }
+        }
+    </script>
+</head>
+<body>
+
+</body>
+</html>
