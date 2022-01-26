@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        let basket = [
+            {
+                name: "nameOne",
+                price: 23
+            },
+            {
+                name: "nameTwo",
+                price: 24
+            },
+            {
+                name: "nameThree",
+                price: 54
+            },
+            {
+                name: "nameFour",
+                price: 69
+            }
+        ];
+
+        let baskPrice = 0;
+        for (let product of basket)  {
+            baskPrice += product.price;
+        };
+        alert ("Basket price is " + baskPrice);
+
+        function countBaskPrice (basket) {
+            let baskPrice = 0;
+            for (let product of basket)  {
+                baskPrice += product.price;
+                return baskPrice;
+            };
+        }
+    </script>
+</head>
+<body>
+
+</body>
+</html>
